@@ -25,6 +25,26 @@ def login():
     
     return render_template("loginemail.html")
 
+@app.route("/cadastro", methods = ["POST"])
+def signup():
+    if request.method == "POST":
+
+        escolha = request.form.get("botao")
+
+        if escolha == "login":
+            return render_template("login.html")
+        
+        elif escolha == "cadastro":
+
+            nome = request.form.get("nome")
+            senha = request.form.get("senha")
+
+            libmodelo.signup(nome, senha)
+
+            return render_template("cadastro.html")
+        
+    return render_template("cadastro.html")
+
 @app.route("/carta", methods = ["POST"])
 def carta():
     if request.method == "POST":
