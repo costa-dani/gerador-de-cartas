@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* Reset de estilos padrão para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+/* Define a paleta de cores */
+:root {
+  --cor-primaria: #336699;
+  --cor-secundaria: #444;
+  --cor-fundo: #f0f0f0;
+}
+
+/* Define o estilo do corpo da página com gradiente de cor */
+body {
+  font-family: "Phudu", sans-serif; /* Fonte elegante */
+  text-align: center; /* Centraliza o texto e os elementos */
+  background-image: linear-gradient(to bottom, var(--cor-primaria), var(--cor-fundo)); /* Gradiente de cor de fundo */
+  color: var(--cor-secundaria); /* Cor principal do texto */
+  padding: 20px; /* Espaçamento interno */
+}
+
+/* Estiliza o cabeçalho */
+h1 {
+  font-size: 36px; /* Tamanho do título */
+  margin: 20px 0; /* Espaçamento superior e inferior */
+}
+
+/* Estiliza o formulário */
+form {
+  display: flex;
+  flex-direction: column; /* Alinha os elementos verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  margin-top: 20px; /* Espaçamento superior para afastar do título */
+}
+
+/* Estiliza os campos de entrada */
+p {
+  text-align: left; /* Alinha o texto à esquerda */
+  margin: 10px 0; /* Espaçamento entre os campos */
+}
+
+/* Estiliza o botão de envio */
+button {
+  margin-top: 20px; /* Espaçamento superior para afastar dos campos */
+  background-color: var(--cor-primaria); /* Cor de fundo destacada para o botão */
+  color: #fff; /* Cor do texto do botão */
+  border: none; /* Remove a borda do botão */
+  border-radius: 5px; /* Borda arredondada */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+}
+
+/* Estiliza os campos de entrada */
+input[type=text], input[type=email] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+/* Estiliza os campos de entrada focados */
+input[type=text]:focus, input[type=email]:focus {
+  border-color: var(--cor-primaria);
+}/*# sourceMappingURL=cartinha.css.map */
