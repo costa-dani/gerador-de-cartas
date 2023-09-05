@@ -1,5 +1,6 @@
 arqlog = open("login.txt", "r")
 arqcart = open("cartas.txt", "a")
+arqsignup = open("login.txt", "a")
 
 def check(n, s):
 
@@ -15,4 +16,9 @@ def check(n, s):
     return 0
 
 def cartinha(data, dest, msg, rem):
+    
     arqcart.write(data+"\n"+dest+"\n"+msg+"\n"+rem)
+
+def signup(nome, senha):
+     
+    arqsignup.write(nome+"-"+senha)

@@ -7,9 +7,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300;400;500;600;800&family=Rubik+Iso&display=swap" rel="stylesheet" />
 
-        <link rel="stylesheet" href="static/estilo.css"/>
+        <link rel="stylesheet" href="static/signup.css"/>
         
-        <title>Fazer login</title>
+        <title>Fazer cadastro</title>
     </head>
     
     <body>
@@ -19,14 +19,16 @@
              alt="Logo do site" class="logo">
              <!-- aqui eu importei a png que coloquei na pasta "assets-->
         
-            <h1>Fazer login</h1>
-        <form action="/login" method="POST">
+            <h1>Fazer cadastro</h1>
+
+        <form action="/cadastro" method="POST">
 
             <p>Nome: <input type="text" id="nome" name="nome"></p>
             <p>Senha: <input type="password" id="senha" name="senha"></p>
 
-            <button type="submit">Cadastrar-se</button>
-            <button type="submit">Entrar</button>
+            <button type="submit" name="botao" value="cadastro">Cadastrar</button>
+            <button type="submit" name="botao" value="login">Ir para o login</button>
+
         </form>
         <div>
     </body>
