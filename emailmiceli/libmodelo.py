@@ -21,8 +21,9 @@ def check(n, s):
 def cartinha(data, dest, msg, rem):
     
     global horario
-    horario = datetime.datetime.now()
-    arqcart = open(str(horario)+".txt", "w+")
+    horario = (datetime.datetime.now())
+    horario = (str(horario)).replace(" ", "")
+    arqcart = open(horario+".txt", "w+")
     arqcart.write(data+"\n"+dest+"\n"+msg+"\n"+rem)
     arqcart.close()
     pdf(str(horario)+".txt")
@@ -34,7 +35,7 @@ def pdf(nome):
     pdf.set_font("Arial", size = 15)
     for l in arq:
         pdf.cell(200, 10, txt = l, ln = 1, align = 'C')
-    pdf.output(str(horario)+".pdf")
+    pdf.output(horario+".pdf")
 
 def signup(nome, senha):
      
