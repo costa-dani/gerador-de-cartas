@@ -57,7 +57,7 @@ def entrar():
             if escolha2 == "signup":
                 return render_template("cadastro.html")
             
-            elif escolha2 == "login":
+            elif escolha2 == "irlogin":
                 return render_template("login.html")
 
             return render_template("cadastro.html")
