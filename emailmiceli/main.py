@@ -28,7 +28,7 @@ def login():
 '''
 
 @app.route("/login", methods = ["POST"])
-def signup():
+def entrar():
     if request.method == "POST":
 
         escolha = request.form.get("botao")

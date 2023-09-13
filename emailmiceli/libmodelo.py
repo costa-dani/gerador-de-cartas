@@ -37,5 +37,5 @@ def pdf(nome):
 def signup(nome, senha):
 
     arqsignup = open("login.txt", "a")
-    arqsignup.write(nome+"-"+senha)
+    arqsignup.write(nome+"-"+senha+"\n")
     arqsignup.close()
