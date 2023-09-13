@@ -2,7 +2,6 @@ import datetime
 from fpdf import FPDF
 
 arqlog = open("login.txt", "r")
-#arqcart = open("cartas.txt", "a")
 arqsignup = open("login.txt", "a")
 
 def check(n, s):
