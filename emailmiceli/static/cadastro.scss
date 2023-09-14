@@ -1,0 +1,82 @@
+/*# sourceMappingURL=cadastro.css.map */
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Phudu", sans-serif; 
+  text-align: center; 
+  background-image: linear-gradient(to bottom, #336699, #f0f0f0); /* Plano de fundo com duas cores que mudam de cima para baixo */
+  color: #333; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  min-height: 100vh; 
+}
+
+/* Estilo para o cabeçalho */
+.header-background {
+  background-color: #0078d4;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 150px; 
+  height: auto; 
+}
+
+h1 {
+  color: #fff;
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+/* Estilo para o formulário */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #0078d4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, margin 0.2s ease; 
+  margin-right: 10px; 
+}
+
+button:last-child {
+  margin-right: 0; 
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+  margin-right: 15px; 
+}
