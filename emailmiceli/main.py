@@ -6,8 +6,9 @@ app.secret_key = "euvoficamaluca"
 
 @app.route("/")
 def hello():
-    return render_template("loginemail.html")
+    return render_template("login.html")
 
+'''
 @app.route("/login", methods = ["POST", "GET"])
 def login():
 
@@ -23,27 +24,45 @@ def login():
         else: 
             return "<h1>Login invalido</h1>"
     
-    return render_template("loginemail.html")
+    return render_template("login.html")
+'''
 
-@app.route("/cadastro", methods = ["POST"])
-def signup():
+@app.route("/login", methods = ["POST"])
+def entrar():
     if request.method == "POST":
 
         escolha = request.form.get("botao")
 
         if escolha == "login":
-            return render_template("login.html")
+
+            nome = request.form.get("nome")
+            senha = request.form.get("senha")
+
+            if libmodelo.check(nome,senha):
+
+                return render_template("carta.html")
         
-        elif escolha == "cadastro":
+            else: 
+                return "<h1>Login invalido</h1>"
+        
+        elif escolha == "signup":
 
             nome = request.form.get("nome")
             senha = request.form.get("senha")
 
             libmodelo.signup(nome, senha)
 
+            escolha2 = request.form.get("botao")
+
+            if escolha2 == "signup":
+                return render_template("cadastro.html")
+            
+            elif escolha2 == "irlogin":
+                return render_template("login.html")
+
             return render_template("cadastro.html")
         
-    return render_template("cadastro.html")
+    return render_template("login.html")
 
 @app.route("/carta", methods = ["POST"])
 def carta():

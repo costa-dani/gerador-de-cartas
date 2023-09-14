@@ -1,12 +1,9 @@
 import datetime
 from fpdf import FPDF
 
-arqlog = open("login.txt", "r")
-#arqcart = open("cartas.txt", "a")
-arqsignup = open("login.txt", "a")
-
 def check(n, s):
 
+    arqlog = open("login.txt", "r")
     lista = arqlog.readlines()
 
     for linha in lista:
@@ -38,5 +35,7 @@ def pdf(nome):
     pdf.output(horario+".pdf")
 
 def signup(nome, senha):
-     
-    arqsignup.write(nome+"-"+senha)
+
+    arqsignup = open("login.txt", "a")
+    arqsignup.write(nome+"-"+senha+"\n")
+    arqsignup.close()
