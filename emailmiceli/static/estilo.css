@@ -1,40 +1,35 @@
+/*# sourceMappingURL=estilo.css.map */
 @charset "UTF-8";
-/* pedi pro chatgpt comentar de forma mais simples, se não entenderem me perguntem pfv
 
-
-
-/* Configuração padrão para todos os elementos na página */
 * {
-  margin: 0; /* Nenhum espaço em volta dos elementos */
-  padding: 0; /* Nenhum espaço interno extra nos elementos */
-  box-sizing: border-box; /* As bordas não aumentam o tamanho dos elementos */
-  outline: 0; /* Remove a borda de foco ao clicar nos elementos */
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  outline: 0; 
 }
 
-/* Estilos para o corpo da página */
 body {
-  font-family: "Phudu", sans-serif; /* Usar uma fonte de texto elegante */
-  text-align: center; /* Centralizar o texto e os elementos na página */
-  background-image: linear-gradient(to bottom, #336699, #f0f0f0); /* Plano de fundo com duas cores que mudam de cima para baixo */
-  color: #333; /* Cor principal do texto */
-  display: flex; /* Organizar o conteúdo de forma flexível */
-  flex-direction: column; /* Alinhar os elementos verticalmente */
-  align-items: center; /* Centralizar horizontalmente os elementos */
-  justify-content: center; /* Centralizar verticalmente os elementos */
-  min-height: 100vh; /* Garantir que a página preencha pelo menos toda a altura da tela */
+  font-family: "Phudu", sans-serif; 
+  text-align: center; 
+  background-image: linear-gradient(to bottom, #336699, #f0f0f0); 
+  color: #333; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  min-height: 100vh; 
 }
 
 /* Estilos para a parte de trás do cabeçalho */
 .header-background {
-  background-color: rgba(255, 255, 255, 0.8); /* Fundo branco um pouco transparente */
-  padding: 30px; /* Espaço interno generoso no cabeçalho */
-  border-radius: 10px; /* Borda arredondada */
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 30px; 
+  border-radius: 10px; /* borda arredondada */
 }
 
-/* Estilos para o logotipo */
 .logo {
-  width: 150px; /* Largura do logotipo */
-  height: auto; /* Mantém a proporção da imagem do logotipo */
+  width: 150px; 
+  height: auto; 
 }
 
 /* Estilos para o título principal */
@@ -51,8 +46,8 @@ form {
 
 /* Estilos para os parágrafos (campos de entrada) */
 p {
-  text-align: center; /* Centralizar o texto dentro dos parágrafos (campos de entrada) */
-  margin: 10px 0; /* Espaço entre os campos de entrada */
+  text-align: center; 
+  margin: 10px 0; 
 }
 
 /* Estilos para os campos de entrada de texto e senha */
@@ -67,11 +62,11 @@ input[type=password] {
 
 /* Estilos para o botão de envio */
 button {
-  margin-top: 20px; /* Espaço acima do botão */
-  background-color: #336699; /* Cor de fundo destacada para o botão */
-  color: #fff; /* Cor do texto no botão */
-  border: none; /* Remove a borda do botão */
-  border-radius: 5px; /* Borda arredondada */
-  padding: 10px 20px; /* Espaço interno no botão */
-  cursor: pointer; /* O cursor do mouse muda quando passa sobre o botão */
-}/*# sourceMappingURL=estilo.css.map */
+  margin-top: 20px; 
+  background-color: #336699; 
+  color: #fff; 
+  border: none; 
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  cursor: pointer;
+}
