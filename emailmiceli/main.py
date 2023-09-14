@@ -60,7 +60,7 @@ def entrar():
             elif escolha2 == "irlogin":
                 return render_template("login.html")
 
-            return render_template("cadastro.html")
+        return render_template("cadastro.html")
         
     return render_template("login.html")
 
@@ -68,13 +68,23 @@ def entrar():
 def carta():
     if request.method == "POST":
 
-        data = request.form.get("data")
-        dest = request.form.get("dest")
-        msg = request.form.get("msg")
-        rem = request.form.get("rem")
+        escolha3 = request.form.get("botao")
 
-        libmodelo.cartinha(data, dest, msg, rem)
+        if escolha3 == "add":
 
-        return render_template("carta.html")
+            data = request.form.get("data")
+            dest = request.form.get("dest")
+            msg = request.form.get("msg")
+            rem = request.form.get("rem")
+
+            libmodelo.cartinha(data, dest, msg, rem)
+
+            return render_template("carta.html")
+        
+        elif escolha3 == "back":
+            
+            return render_template("login.html")
+        
+    return render_template("carta.html")
 
 app.run()
